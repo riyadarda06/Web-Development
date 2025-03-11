@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>Delicious Bites</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Experience the Taste of Authentic Cuisine</h2>
+            <p>Fresh ingredients, expertly prepared for you.</p>
+            <button onclick="scrollToMenu()">View Menu</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="burger.jpg" alt="Dish 1">
+                <h3>Burger</h3>
+                <p>Rs 200</p>
+            </div>
+            <div class="menu-item">
+                <img src="pizza.jpg" alt="Dish 2">
+                <h3>Pizza</h3>
+                <p>Rs.400</p>
+            </div>
+            <div class="menu-item">
+                <img src="fries.jpg" alt="Dish 3">
+                <h3>Fries</h3>
+                <p>Rs.200</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="form-response"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
